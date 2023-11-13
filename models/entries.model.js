@@ -1,5 +1,5 @@
 //const { Pool } = require('pg');
-const queries = require('./queries')
+const queries = require('../queries/entries.queries')
 const pool = require('../config/db_pgsql')//accede al fichero este que es el que accede al .env donde está la info
 
 

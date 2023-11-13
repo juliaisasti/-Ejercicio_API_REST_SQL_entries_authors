@@ -1,10 +1,10 @@
 const express = require('express');
 // Rutas de productos
-const entriesApiController = require("../controllers/entriesAPI.controller");
+const entriesApiController = require("../controllers/entries.controller");
 const entriesApiRouter = express.Router();
 
-entriesApiRouter.get('/', entriesApiController.getEntries);
-entriesApiRouter.post('/', entriesApiController.createEntry);
+entriesApiRouter.get('/api/entries', entriesApiController.getEntries);
+entriesApiRouter.post('/api/entries', entriesApiController.createEntry);
 
 module.exports = entriesApiRouter;
 
